@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
+    <title>A Saboeira - Turismo Rural</title>
+
+    <!-- BOOTSTRAP v5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- FONTAWESOME -->
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- PARALLAX.JS -->
+    <script src="/lib/parallax.min.js"></script>
+
+    <!-- HOVER.CSS -->
+
+    <!-- GALLERY -->
+    <link rel="stylesheet" href="/css/gallery.css">
+
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="/css/gallery.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+
+
+<body>
+    <!-- TOP TEASER -->
+    <div class="teaser">
+
+        <!-- NAVBAR -->
+        <div class="container position-absolute start-50 translate-middle-x nav py-4">
+            <div class="row w-100">
+                <div class="col-3">
+                    <div class="navbar-title">
+                        <a href="#">
+                            <h3>A Saboeira</h3>
+                            <h4>Turismo Rural</h4>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col"></div>
+
+                <div class="col">
+
+                    <div class="row d-flex align-content-center">
+                        <div class="col">
+                            <a href="#" class="px-3">
+                                <h5>GALERIA</h5>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="px-3">
+                                <h5>QUARTOS</h5>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="px-3">
+                                <h5>CONTACTOS</h5>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="px-3">
+                                <h5>SOBRE</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- NAVBAR -->
+
+
+        <div class="overlay"></div>
+        <video src="teaser.mp4" autoplay muted loop></video>
+    </div>
+    <!-- TOP TEASER -->
+
+    <!-- GALLERY -->
+    <div class="container mt-5">
+        <div class="row">
+
+            <div align="center">
+                <button class="filter-button" data-filter="all">Tudo</button>
+                <button class="filter-button" data-filter="category1">Comida</button>
+                <button class="filter-button" data-filter="category2">Envolvência</button>
+                <button class="filter-button" data-filter="category3">'Lifestyle'</button>
+            </div>
+
+            <br/>
+
+            <div class="gallery_product col-sm-4 col-xs-6 filter category1">
+                <img class="img-responsive" alt="" src="/img/food/1.jpg" />
+            </div>
+
+            <div class="gallery_product col-sm-4 col-xs-6 filter category2">
+                <img class="img-responsive" alt="" src="/img/wilderness/1.jpg" />
+            </div>
+
+            <div class="gallery_product col-sm-4 col-xs-6 filter category3">
+                <img class="img-responsive" alt="" src="/img/lifestyle/1.jpg" />
+            </div>
+
+            <div class="gallery_product col-sm-4 col-xs-6 filter category1">
+                <img class="img-responsive" alt="" src="/img/food/2.jpg" />
+            </div>
+
+            <div class="gallery_product col-sm-4 col-xs-6 filter category2">
+                <img class="img-responsive" alt="" src="/img/wilderness/2.jpg" />
+            </div>
+
+            <div class="gallery_product col-sm-4 col-xs-6 filter category3">
+                <img class="img-responsive" alt="" src="/img/lifestyle/2.jpg" />
+            </div>
+
+            <div class="gallery_product col-sm-4 col-xs-6 filter category2">
+                <img class="img-responsive" alt="" src="/img/wilderness/4.jpg" />
+            </div>
+
+            <div class="gallery_product col-sm-4 col-xs-6 filter category1">
+                <img class="img-responsive" alt="" src="/img/food/3.jpg" />
+            </div>
+
+            <div class="gallery_product col-sm-4 col-xs-6 filter category3">
+                <img class="img-responsive" alt="" src="/img/lifestyle/3.jpg" />
+            </div>
+
+            <div class="gallery_product col-sm-4 col-xs-6 filter category2">
+                <img class="img-responsive" alt="" src="/img/wilderness/3.jpg" />
+            </div>
+
+            <div class="gallery_product col-sm-4 col-xs-6 filter category3">
+                <img class="img-responsive" alt="" src="/img/lifestyle/4.jpg" />
+            </div>
+
+            <div class="gallery_product col-sm-4 col-xs-6 filter category2">
+                <img class="img-responsive" alt="" src="/img/wilderness/5.jpg" />
+            </div>
+
+            <div class="gallery_product col-sm-4 col-xs-6 filter category3">
+                <img class="img-responsive" alt="" src="/img/lifestyle/5.jpg" />
+            </div>
+
+        </div>
+    </div>
+    <!-- GALLERY -->
+
+    <script>
+        /*	gallery */
+        $(document).ready(function() {
+
+            $(".filter-button").click(function() {
+                var value = $(this).attr('data-filter');
+
+                if (value == "all") {
+                    $('.filter').show('1000');
+                } else {
+                    $(".filter").not('.' + value).hide('3000');
+                    $('.filter').filter('.' + value).show('3000');
+
+                }
+
+                if ($(".filter-button").removeClass("active")) {
+                    $(this).removeClass("active");
+                }
+                $(this).addClass("active");
+            });
+        });
+        /*	end gallery */
+
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+        });
+    </script>
+
+</body>
+
+</html>
