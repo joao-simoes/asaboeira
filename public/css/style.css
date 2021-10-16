@@ -112,6 +112,7 @@ ul {
     transition: ease-in-out 1s;
     background-color: white;
     z-index: 200;
+    transform: scale(1);
 }
 
 .loader img {
