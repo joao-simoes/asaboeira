@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- ICON -->
+    <link rel="shortcut icon" href="/img/logo/test.png" type="image/png">
+
     <!-- TITLE -->
     <title>A Saboeira - Turismo Rural</title>
 
@@ -39,127 +42,137 @@
 
 
 <body>
-    <!-- LANDING -->
-    <div class="teaser">
 
-        <!-- NAVBAR -->
-        <div class="container position-absolute start-50 translate-middle-x nav py-4">
-            <div class="row w-100">
+    <!-- LOADER -->
+    <%- include('loader.ejs') %>
+        <!-- LOADER -->
 
-                <!-- TITLE -->
-                <div class="col-3">
-                    <div class="navbar-title">
-                        <a href="#">
-                            <h3>A Saboeira</h3>
-                            <h4>Turismo Rural</h4>
-                        </a>
+
+        <!-- LANDING -->
+        <div class="teaser">
+
+            <!-- NAVBAR -->
+            <div class="container position-absolute start-50 translate-middle-x nav py-4">
+                <div class="row w-100">
+
+                    <!-- TITLE -->
+                    <div class="col-3">
+                        <div class="navbar-title">
+                            <a href="#">
+                                <h3>A Saboeira</h3>
+                                <h4>Turismo Rural</h4>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <!-- TITLE -->
+                    <!-- TITLE -->
 
 
-                <!-- SPACER -->
-                <div class="col"></div>
-                <!-- SPACER -->
+                    <!-- SPACER -->
+                    <div class="col"></div>
+                    <!-- SPACER -->
 
 
-                <!-- LINKS -->
-                <div class="col">
-                    <div class="row d-flex align-content-center">
+                    <!-- LINKS -->
+                    <div class="col">
+                        <div class="row d-flex align-content-center">
 
-                        <div class="col">
-                            <a href="#" class="px-3">
-                                <h5>GALERIA</h5>
-                            </a>
+                            <div class="col">
+                                <a href="#" class="px-3">
+                                    <h5>GALERIA</h5>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="px-3">
+                                    <h5>QUARTOS</h5>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="px-3">
+                                    <h5>CONTACTOS</h5>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="px-3">
+                                    <h5>SOBRE</h5>
+                                </a>
+                            </div>
+
                         </div>
-                        <div class="col">
-                            <a href="#" class="px-3">
-                                <h5>QUARTOS</h5>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="px-3">
-                                <h5>CONTACTOS</h5>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="px-3">
-                                <h5>SOBRE</h5>
-                            </a>
-                        </div>
-
                     </div>
-                </div>
-                <!-- LINKS -->
+                    <!-- LINKS -->
 
+                </div>
             </div>
+            <!-- NAVBAR -->
+
+
+            <!-- VIDEO -->
+            <div class="overlay"></div>
+            <video src="teaser.mp4" autoplay muted loop></video>
+            <!-- VIDEO -->
+
+
         </div>
-        <!-- NAVBAR -->
-
-
-        <!-- VIDEO -->
-        <div class="overlay"></div>
-        <video src="teaser.mp4" autoplay muted loop></video>
-        <!-- VIDEO -->
-
-
-    </div>
-    <!-- LANDING -->
+        <!-- LANDING -->
 
 
 
 
 
 
-    <!-- GALLERY -->
-    <%- include('gallery.ejs') %>
         <!-- GALLERY -->
+        <%- include('gallery.ejs') %>
+            <!-- GALLERY -->
 
 
 
-        <!-- PARALLAX -->
-        <div class="container parallax">
-            <img class="prl thumbnail" src="/img/wilderness/3.jpg" alt="image">
-        </div>
-        <!-- PARALLAX -->
+            <!-- PARALLAX -->
+            <div class="container parallax">
+                <img class="prl thumbnail" src="/img/background/1.jpg" alt="image">
+            </div>
+            <!-- PARALLAX -->
 
 
-        <!-- ROOMS GALLERY -->
-        <%- include('rooms.ejs') %>
             <!-- ROOMS GALLERY -->
+            <%- include('rooms.ejs') %>
+                <!-- ROOMS GALLERY -->
 
 
 
 
-            <!-- CONTACTS  -->
-            <%- include('contacts.ejs') %>
                 <!-- CONTACTS  -->
+                <%- include('contacts.ejs') %>
+                    <!-- CONTACTS  -->
 
 
-                <div class="container parallax">
-                    <img class="prl thumbnail" src="/img/wilderness/4.jpg" alt="image">
-                </div>
+                    <div class="container parallax">
+                        <img class="prl thumbnail" src="/img/background/2.jpg" alt="image">
+                    </div>
 
 
-                <!-- SOBRE -->
-                <%- include('about.ejs') %>
                     <!-- SOBRE -->
+                    <%- include('about.ejs') %>
+                        <!-- SOBRE -->
 
 
 
 
 
-                    <!-- MAP -->
-                    <%- include('map.ejs') %>
                         <!-- MAP -->
+                        <%- include('map.ejs') %>
+                            <!-- MAP -->
 
 
 
 
 
-                        <!-- PARALLAX.JS -->
-                        <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
-                        <script src="/js/parallax.js"></script>
+                            <!-- PARALLAX.JS -->
+                            <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+                            <script src="/js/parallax.js"></script>
+
+
+                            <!-- LOADER -->
+                            <script src="/js/loader.js"></script>
 </body>
 
 </html>
