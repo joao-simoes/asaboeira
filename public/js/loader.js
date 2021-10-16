@@ -8,4 +8,5 @@ $(document).ready(function() {
 
 function loaded() {
     loader.style.opacity = "0%"
+    oader.style.transform = "scale(0)"
 }
