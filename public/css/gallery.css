@@ -8,7 +8,8 @@
     margin-bottom: 70px;
 }
 
-.filter-button {
+.filter-button,
+.filter-button2 {
     font-size: 18px;
     border: 2px solid #3F6184;
     padding: 5px 10px;
@@ -20,7 +21,10 @@
 
 .filter-button:hover,
 .filter-button:focus,
-.filter-button.active {
+.filter-button.active,
+.filter-button2:hover,
+.filter-button2:focus,
+.filter-button2.active {
     color: #ffffff;
     background-color: #3F6184;
     outline: none;

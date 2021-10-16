@@ -1,0 +1,40 @@
+<div class="container mt-5 position-relative">
+    <div class="row">
+
+        <div align="center">
+            <button class="filter-button2 active" data-filter2="category11">Quarto 1</button>
+            <button class="filter-button2" data-filter2="category22">Quarto 2</button>
+            <button class="filter-button2" data-filter2="category33">Quarto 3</button>
+            <button class="filter-button2" data-filter2="category44">Quarto 4</button>
+            <button class="filter-button2" data-filter2="category55">Quarto 5</button>
+            <button class="filter-button2" data-filter2="category66">Quarto 6</button>
+            <button class="filter-button2" data-filter2="category77">Quarto 7</button>
+        </div>
+
+        <br/>
+
+        <%const photoQT = [2, 2, 3, 2, 1, 2, 1]%>
+
+            <% for( let room = 1; room <= 7; room++ ) { %>
+
+                <% for( let pic = 1; pic <= photoQT[room-1]; pic++ ) { %>
+
+                    <% if (room == 1) { %>
+                        <div class="gallery_product col-sm-6 col-xs-6 filter2 category<%=room%><%=room%>">
+                            <img loading="lazy" class="img-responsive" alt="Quarto <%=room%>" src="/img/rooms/<%=room%>/<%=pic%>.jpg" />
+                        </div>
+                        <% } else { %>
+                            <div class="gallery_product col-sm-6 col-xs-6 filter2 category<%=room%><%=room%>" style="display: none;">
+                                <img loading="lazy" class="img-responsive" alt="Quarto <%=room%>" src="/img/rooms/<%=room%>/<%=pic%>.jpg" />
+                            </div>
+                            <% } %>
+                                <% } %>
+
+
+
+                                    <% } %>
+
+
+
+    </div>
+</div>
