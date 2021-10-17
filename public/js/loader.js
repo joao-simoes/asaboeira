@@ -8,5 +8,5 @@ $(document).ready(function() {
 
 function loaded() {
     loader.style.opacity = "0%"
-    loader.style.transform = "scale(0)"
+    setTimeout(() => { loader.style.transform = "scale(0)" }, 1100)
 }
