@@ -123,3 +123,44 @@ ul {
     max-width: 300px;
     min-width: 100px;
 }
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1400px) {
+    .desktop {
+        display: none !important;
+    }
+    .mobile {
+        display: block;
+    }
+    .navbar-title {
+        text-align: end;
+    }
+    .navbar-links {
+        text-align: start;
+    }
+    .prl {
+        max-height: 200px !important;
+        min-height: 100px;
+    }
+    .simpleParallax {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .filter-button,
+    .filter-button2 {
+        margin-bottom: 10px;
+    }
+    .container {
+        margin-top: 80px !important;
+    }
+    .map iframe {
+        height: 300px !important;
+    }
+}
